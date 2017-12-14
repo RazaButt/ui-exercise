@@ -13,6 +13,22 @@ html {
 	padding: 10px;
 }
 
+.header {
+	position: relative;
+}
+
+.sidebar {
+	margin-bottom: 20px;
+}
+
+.sidebar-link {
+	cursor: pointer;
+	display: block;
+	position: absolute;
+	right: 10px;
+	top: 15px;
+}
+
 .sidebar.test {
 	margin-right: -600px;
 }
@@ -84,8 +100,12 @@ html {
 	}
 
     .sidebar {
+    	display: block;
 		float: right;
 		list-style-type: none;
+		transition: margin-right;
+		transition-duration: 1s;
 		width: 30%;
 	}
+
 }
